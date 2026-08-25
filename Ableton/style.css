@@ -4,26 +4,38 @@
     font-family: "Poppins", sans-serif;
 }
 
-header {
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #555;
+    height: 50px;
+
+}
+
+nav {
+    flex-grow: 1;
+    flex-basis: 90%;
     display: flex;
     font-size: 13px;
     font-weight: 500;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #555;
-    height: 50px;
+    align-items: center; 
 }
 
 .header-left{
     display: flex;
     align-items: center;
-    margin: 0 25px;
     gap: 20px;
 }
 
-.header-left img{
+header > a {
+    margin-right: 20px;
+}
+
+header img {
     width: 45px;
     height: 30px;
+    margin-left: 20px;
 }
 
 .header-left a, .header-right a{
@@ -48,3 +60,76 @@ header {
     transform: translateY(-5px);
 }
 
+header .fa-bars {
+    display: none;
+}
+
+header nav .fa-xmark{
+    display: none;
+}
+
+@media (max-width: 760px) {
+    header{
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -200px;
+
+        width: 200px;
+        height: 100vh;
+
+        background: #b1c5ff;
+        transition: 0.5s;
+
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    header nav > .fa-xmark {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    header nav .header-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 0;
+    }
+
+
+    header nav a {
+        font-size: 14px;
+    }
+
+
+    header nav .header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin: auto 0 0 0;
+    }
+
+    header > .fa-bars {
+        display: block;
+        margin-right: 25px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    header > .fa-bars:hover,
+    header nav > .fa-xmark:hover {
+        color: #ff764d;
+    }
+}
