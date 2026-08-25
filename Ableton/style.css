@@ -3,3 +3,44 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+
+header {
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+    height: 50px;
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    gap: 20px;
+}
+
+.header-left img{
+    width: 45px;
+    height: 30px;
+}
+
+.header-left a, .header-right a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    gap: 25px;    
+}
+
+#blue-link{
+    color: blue;
+}
+
