@@ -16,7 +16,6 @@ header {
 
 .header-left{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0 25px;
     gap: 20px;
@@ -30,11 +29,11 @@ header {
 .header-left a, .header-right a{
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 
 .header-right{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0 25px;
     gap: 25px;    
@@ -42,5 +41,10 @@ header {
 
 #blue-link{
     color: blue;
+}
+
+.header-left a:hover, .header-right a:hover{
+    color: #ff764d;
+    transform: translateY(-5px);
 }
 
