@@ -476,7 +476,7 @@ header nav .fa-xmark{
 
 footer{
     width: 80%;
-    margin: auto;
+    margin: 0 auto 80px auto;
 }
 
 footer h1{
@@ -484,3 +484,38 @@ footer h1{
     margin-bottom: 20px;
 }
 
+.footer-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card p{
+    font-size: small;
+}
+
+.card .input form{
+    display: flex;
+}
+
+.card .input form input{
+    border: none;
+    background-color: rgb(243, 240, 240);
+    padding: 6px 15px;
+    width: 80%;
+}
+
+.card .input form button{
+    border: none;
+    background-color: #0000ff;
+    color: white;
+    padding: 2px 10px;
+    width: 20%;
+}
