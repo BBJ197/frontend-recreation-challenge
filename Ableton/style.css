@@ -405,7 +405,7 @@ header nav .fa-xmark{
     margin: 80px auto;
     display: flex;
     background-color: #b1c5ff;
-    width: 70%;
+    width: 80%;
     height: fit-content;
     gap: 5%;
 }
@@ -426,7 +426,7 @@ header nav .fa-xmark{
 @media (max-width: 1100px){
     .final-missage{
         flex-direction: column;
-        width: 50%;
+        width: 60%;
     }
 
     .final-missage img{
@@ -437,4 +437,16 @@ header nav .fa-xmark{
     .final-missage div{
         margin: 30px 0 10px 0;
     }
+}
+
+
+/* footer */
+
+footer{
+    width: 80%;
+    margin: auto;
+}
+
+footer h1{
+    font-size: 40px;
 }
