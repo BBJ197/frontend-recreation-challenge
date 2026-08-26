@@ -171,3 +171,24 @@ header nav .fa-xmark{
     color: #ff764d;
     transition: 0.7s;
 }
+
+/* banner */
+
+.banner {
+    display: flex;
+    width: 90%;
+    height: 600px;
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.banner h1{
+    color: #ff764d;
+    font-size: 80px;
+}
