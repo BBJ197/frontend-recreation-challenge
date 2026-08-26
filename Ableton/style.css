@@ -192,3 +192,25 @@ header nav .fa-xmark{
     color: #ff764d;
     font-size: 80px;
 }
+
+/* top-missage */
+
+.top-missage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.top-missage .big-article{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+}
+
+.top-missage .small-article{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 14.5px;
+    margin: 20px 0 100px 0;
+}
+
