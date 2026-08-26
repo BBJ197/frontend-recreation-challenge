@@ -547,6 +547,30 @@ footer h1{
     width: 220px;
 }
 
+.last-footer{
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.last-footer .left{
+    display: flex;
+    gap: 15px;
+}
+
+.last-footer .right{
+    display: flex;
+    gap: 10px;
+}
+
+.last-footer .right img{
+    width: 40px;
+    height: 30px;
+}
+
 @media (max-width: 1100px){
     .footer-cards{
         display: flex;
@@ -557,5 +581,9 @@ footer h1{
     .card .input form input{
         padding: 6px 15px;
         width: 40%;
+    }
+
+    .last-footer .left{
+        flex-direction: column;
     }
 }
