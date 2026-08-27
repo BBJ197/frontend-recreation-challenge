@@ -295,7 +295,7 @@ header nav .fa-xmark{
 
 .two {
     background-color: #f1f8f6;
-    padding: 30px 0;
+    padding: 30px 0 5px 0;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -371,4 +371,20 @@ li button:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+}
+
+#s50{
+    display: none;
+    transition: 1s;
+}
+
+#s100{
+    display: none;
+    transition: 1s;
+}
+
+#s200{
+    display: none;
+    transition: 1s;
 }

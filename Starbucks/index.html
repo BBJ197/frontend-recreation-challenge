@@ -93,7 +93,7 @@
     </section>
 
     <!-- section 2.1 -->
-     <section class="two-25">
+     <section class="two-25" id="s25">
         <img src="images/25-stars.jpg" alt="25-stars">
         <div class="text">
             <h3>Customize your drink</h3>
@@ -102,12 +102,39 @@
                 your favorite syrup.</p>
         </div>
      </section>
+
+     <section class="two-25" id="s50">
+        <img src="images/50-stars.png" alt="25-stars">
+        <div class="text">
+            <h3>New! Up to $2 off your order.</h3>
+        </div>
+     </section>
+
+     <section class="two-25" id="s100">
+        <img src="images/100-stars.png" alt="25-stars">
+        <div class="text">
+            <p>Brewed coffee or tea (hot or iced), bakery item,
+                packaged snacks and more. Up to $6 value.</p>
+        </div>
+     </section>
+
+     <section class="two-25" id="s200">
+        <img src="images/200-stars.png" alt="25-stars">
+        <div class="text">
+            <p>Handcrafted drink (like a latte or cold brew) or hot
+                breakfast. Up to $10 value.</p>
+        </div>
+     </section>
      
 
     <!-- javascript -->
     <script>
         const navMenu = document.getElementById("navMenu");
         const starSelection = document.getElementById("star");
+        const s25 = document.getElementById("s25")
+        const s50 = document.getElementById("s50")
+        const s100 = document.getElementById("s100")
+        const s200 = document.getElementById("s200")
     
         function showMenue() {
             navMenu.style.right = "0";
@@ -119,18 +146,34 @@
 
         function S25() {
             starSelection.style.setProperty("--underline-position", "-25px");
+            s25.style.display = "flex";
+            s50.style.display = "none";
+            s100.style.display = "none";
+            s200.style.display = "none";
         }
 
         function S50() {
             starSelection.style.setProperty("--underline-position", "70px");
+            s25.style.display = "none";
+            s50.style.display = "flex";
+            s100.style.display = "none";
+            s200.style.display = "none";
         }
 
         function S100() {
             starSelection.style.setProperty("--underline-position", "170px");
+            s25.style.display = "none";
+            s50.style.display = "none";
+            s100.style.display = "flex";
+            s200.style.display = "none";
         }
 
         function S200() {
             starSelection.style.setProperty("--underline-position", "280px");
+            s25.style.display = "none";
+            s50.style.display = "none";
+            s100.style.display = "none";
+            s200.style.display = "flex";
         }
 
     </script>
