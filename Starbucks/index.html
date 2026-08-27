@@ -11,6 +11,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <a href="">
+            <img src="images/logo.webp" alt="logo">
+        </a>
+        <nav  id="navMenu">
+            <i class="fa-solid fa-xmark" onclick="hideMenue()"></i>
+            <div class="header-left">
+                <a href="" class="menu">MENU</a>
+                <a href="" class="menu" id="selected">REWARDS</a>
+                <a href="" class="menu">GIFT CARDS</a>
+            </div>
+            <div class="header-right">
+                <a href="" class="menu"><i class="fa-solid fa-location-dot"></i> Find a store</a>
+                <button class="button1">Sign in</button>
+                <button class="button2">Join now</button>
+            </div>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenue()"></i>
+    </header>
+
+    <!-- javascript -->
+    <script>
+        const navMenu = document.getElementById("navMenu");
     
+        function showMenue() {
+            navMenu.style.right = "0";
+        }
+    
+        function hideMenue() {
+            navMenu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
