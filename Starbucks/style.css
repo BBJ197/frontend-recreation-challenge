@@ -166,8 +166,6 @@ header nav .fa-xmark{
     header nav > .fa-xmark:hover {
         color: #008248;
     }
-
-    #selected::after{
-
-    }
 }
+
+
