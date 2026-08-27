@@ -243,7 +243,7 @@ header nav .fa-xmark{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
     flex-direction: column;
     gap: 30px;
 }
@@ -283,4 +283,44 @@ header nav .fa-xmark{
         flex-direction: column;
         width: 50%;
     }
+}
+
+/* section 2 */
+
+.two{
+    background-color: #f1f8f6;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.two h3{
+    margin-bottom: 30px;
+}
+
+.two ul{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+li a:hover{
+    color: #008248;
+    transition: 0.5s;
+}
+
+.star {
+    color: #D4AF37;
+    font-size: 12px;
 }
