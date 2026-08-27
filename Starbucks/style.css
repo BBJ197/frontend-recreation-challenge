@@ -352,9 +352,23 @@ li button:hover{
     transition: left 0.5s ease;
 }
 
-.two-1{
+.two-25{
     background-color: #d4e9e2;
-    height: 100%;
     position: relative;
     z-index: 1;
+    display: flex;
+    padding: 30px 0;    
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.two-25 img{
+    width: 300px;
+}
+
+.two-25 .text{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
