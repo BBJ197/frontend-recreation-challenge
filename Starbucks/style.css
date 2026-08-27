@@ -62,7 +62,7 @@ header img {
     border: 1px solid;
     color: black;
     border-radius: 30px;
-    padding: 3px 20px;
+    padding: 5px 20px;
     font-size: 12px;
     font-weight: 700;
     width: 100px;
@@ -73,7 +73,7 @@ header img {
     border: 1px solid;
     color: white;
     border-radius: 30px;
-    padding: 3px 20px;
+    padding: 5px 20px;
     font-size: 12px;
     font-weight: 700;
     width: 100px;
@@ -81,6 +81,11 @@ header img {
 
 button:hover{
     transform: translateY(-5px);
+}
+
+button:active{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .header-right{
@@ -243,9 +248,10 @@ header nav .fa-xmark{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 100%;
     flex-direction: column;
     gap: 30px;
+    margin: 30px 0;
 }
 
 .one div{
@@ -287,10 +293,13 @@ header nav .fa-xmark{
 
 /* section 2 */
 
-.two{
+.two {
     background-color: #f1f8f6;
-    padding-top: 30px;
+    padding: 30px 0;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .two h3{
@@ -309,13 +318,16 @@ li{
     list-style: none;
 }
 
-li a{
+li button{
+    background-color: transparent;
     color: black;
-    text-decoration: none;
+    font-size: 15px;
     font-weight: 500;
+    border: none;
+    padding: 5px 10px;
 }
 
-li a:hover{
+li button:hover{
     color: #008248;
     transition: 0.5s;
 }
@@ -323,4 +335,26 @@ li a:hover{
 .star {
     color: #D4AF37;
     font-size: 12px;
+}
+
+#star {
+    position: relative;
+}
+
+#star::after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: var(--underline-position, -25px);
+    width: 200%;
+    height: 4px;
+    background-color: #008248;
+    transition: left 0.5s ease;
+}
+
+.two-1{
+    background-color: #d4e9e2;
+    height: 100%;
+    position: relative;
+    z-index: 1;
 }

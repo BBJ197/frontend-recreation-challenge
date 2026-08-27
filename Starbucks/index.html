@@ -85,16 +85,28 @@
     <section class="two">
         <h3>Get your favorites for free</h3>
         <ul>
-            <li><a href="">25<span class="star">★</span></a></li>
-            <li><a href="">50<span class="star">★</span></a></li>
-            <li><a href="">100<span class="star">★</span></a></li>
-            <li><a href="">200<span class="star">★</span></a></li>
+            <li><button onclick="S25()" id="star">25<span class="star">★</span></button></li>
+            <li><button onclick="S50()">50<span class="star">★</span></button></li>
+            <li><button onclick="S100()">100<span class="star">★</span></button></li>
+            <li><button onclick="S200()">200<span class="star">★</span></button></li>
         </ul>
     </section>
+
+    <!-- section 2.1 -->
+     <section class="two-1">
+        <img src="images/25-stars.jpg" alt="25-stars">
+        <div class="text">
+            <h3>Customize your drink</h3>
+            <p>Make your drink just right with an extra
+                espresso shot, dairy substitute or a dash of
+                your favorite syrup.</p>
+        </div>
+     </section>
 
     <!-- javascript -->
     <script>
         const navMenu = document.getElementById("navMenu");
+        const starSelection = document.getElementById("star");
     
         function showMenue() {
             navMenu.style.right = "0";
@@ -103,6 +115,23 @@
         function hideMenue() {
             navMenu.style.right = "-200px";
         }
+
+        function S25() {
+            starSelection.style.setProperty("--underline-position", "-25px");
+        }
+
+        function S50() {
+            starSelection.style.setProperty("--underline-position", "70px");
+        }
+
+        function S100() {
+            starSelection.style.setProperty("--underline-position", "170px");
+        }
+
+        function S200() {
+            starSelection.style.setProperty("--underline-position", "280px");
+        }
+
     </script>
 </body>
 </html>
