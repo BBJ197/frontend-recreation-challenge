@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="images/logo.webp" alt="logo">
+        </a>
+        <nav  id="navMenu">
+            <i class="fa-solid fa-xmark" onclick="hideMenue()"></i>
+            <div class="header-left">
+                <a href="" class="menu">MENU</a>
+                <a href="" class="menu" id="selected">REWARDS</a>
+                <a href="" class="menu">GIFT CARDS</a>
+            </div>
+            <div class="header-right">
+                <a href="" class="menu"><i class="fa-solid fa-location-dot"></i> Find a store</a>
+                <button class="button1">Sign in</button>
+                <button class="button2">Join now</button>
+            </div>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenue()"></i>
+    </header>
+
+    <div class="sub-header">
+        <h3>
+            STURBUCKS' REWARDS
+        </h3>
+    </div>
+
+    <div class="banner">
+        <h1>FREE COFFEE <br>
+            IS A TAP AWAY</h1>
+
+        <p>Join now to start earning Rewards.</p>
+        <button class="button2">Join now</button>
+        <p>Or join in the app for the best experience</p>
+    </div>
+
+    <!-- section 1 -->
+
+    <section class="one">
+        <div>
+            <h3>Getting started is easy</h3>
+            <p>Earn Stars and get rewarded in a few easy steps.</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="number-circle">1</div>
+                <p><b>Create an account</b></p>
+                <p>To get started, <a href="" id="green-link">join now</a>. You can also <a href="" id="green-link">join in the
+                    app</a> to get access to the full range of Starbucks
+                    Rewards benefits.</p>
+            </div>
+
+            <div class="card">
+                <div class="number-circle">2</div>
+                <p><b>Order and pay how you'd like</b></p>
+                <p>Use cash, credit/debit card or save some time
+                    and pay right through the app. You'll collect Stars
+                    all ways. <a href="" id="green-link">Learn how</a></p>
+            </div>
+
+            <div class="card">
+                <div class="number-circle">3</div>
+                <p><b>Earn Stars, get Rewards</b></p>
+                <p>As you earn Stars, you can redeem them for
+                    Rewards-like free food, drinks, and more. Start
+                    redeeming with as little as 25 Stars!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+
+    <section class="two">
+        <h3>Get your favorites for free</h3>
+        <ul>
+            <li><button onclick="S25()" id="star">25<span class="star">★</span></button></li>
+            <li><button onclick="S50()">50<span class="star">★</span></button></li>
+            <li><button onclick="S100()">100<span class="star">★</span></button></li>
+            <li><button onclick="S200()">200<span class="star">★</span></button></li>
+        </ul>
+    </section>
+
+    <!-- section 2.1 -->
+     <section class="two-25" id="s25">
+        <img src="images/25-stars.jpg" alt="25-stars">
+        <div class="text">
+            <h3>Customize your drink</h3>
+            <p>Make your drink just right with an extra
+                espresso shot, dairy substitute or a dash of
+                your favorite syrup.</p>
+        </div>
+     </section>
+
+     <section class="two-25" id="s50">
+        <img src="images/50-stars.png" alt="25-stars">
+        <div class="text">
+            <h3>New! Up to $2 off your order.</h3>
+        </div>
+     </section>
+
+     <section class="two-25" id="s100">
+        <img src="images/100-stars.png" alt="25-stars">
+        <div class="text">
+            <p>Brewed coffee or tea (hot or iced), bakery item,
+                packaged snacks and more. Up to $6 value.</p>
+        </div>
+     </section>
+
+     <section class="two-25" id="s200">
+        <img src="images/200-stars.png" alt="25-stars">
+        <div class="text">
+            <p>Handcrafted drink (like a latte or cold brew) or hot
+                breakfast. Up to $10 value.</p>
+        </div>
+     </section>
+
+
+     <!-- section 3 -->
+
+    <section class="three">
+        <div>
+            <h3>Endless Extras</h3>
+            <p>Joining Starbucks. Rewards means unlocking access to exclusive benefits. Say hello to
+                easy ordering, tasty Rewards and-yes, free coffee.</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <img src="images/img1.jpeg" alt="">
+                <p><b>Fun freebies</b></p>
+                <p>Not only can you earn free coffee, look forward
+                    to a birthday treat plus coffee and tea refills.</p>
+                <p><a href="" id="green-link">Learn more</a></p>
+                    
+            </div>
+
+            <div class="card">
+                <img src="images/img2.jpeg" alt="">
+                <p><b>Order & pay ahead</b></p>
+                <p>Enjoy the convenience of in-store, curbside or
+                    drive-thru pickup at select stores.
+                </p>
+                <p><a href="" id="green-link">Learn more</a></p>
+            </div>
+
+            <div class="card">
+                <img src="images/img3.jpeg" alt="">
+                <p><b>Get to free faster</b></p>
+                <p>Earn Stars even quicker with Bonus Star
+                    challenges, Double Star Days and exciting games.</p>
+                <p><a href="" id="green-link">Learn more</a></p>                    
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- section 4 -->
+
+    <section class="four">
+        
+        <div class="footer-text">
+            <h3>Cash or card, you earn Stars</h3>
+            <p>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up
+                to (really delicious) Rewards.</p>
+        </div>
+        
+        <div class="footer">
+
+            <div class="cards">
+                <div class="footer-text">
+                    <h3>1<span class="star">★</span> per dollar</h3>
+                    <p>Pay as you go</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="images/foote1.jpeg" alt="">
+                <div class="footer-text">
+                    <p><b>Scan and pay separately</b></p> 
+                    <p>Use cash or credit/debit card at the
+                    register.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="images/footer2.jpeg" alt="">
+                <div class="footer-text">
+                    <p><b>Scan and pay separately</b></p> 
+                    <p>Use cash or credit/debit card at the
+                    register.</p>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="cards">
+                <div class="footer-text">
+                    <h3>2<span class="star">★</span> per dollar</h3>
+                    <p>Add funds in the app</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="images/footer3.jpeg" alt="">
+                <div class="footer-text">
+                    <p><b>Preload</b></p> 
+                    <p>To save time and earn Stars twice
+                        as fast, add money to your digital
+                        Starbucks Card using any payment
+                        option. Scan and pay in one step or
+                        order ahead in the app.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="images/footer4.jpeg" alt="">
+                <div class="footer-text">
+                    <p><b>Register your gift card</b></p> 
+                    <p>Then use it to pay through the app.
+                        You can even consolidate balances
+                        from multiple cards in one place..</p>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="cards">
+                <div class="footer-text">
+                    <h3>Up to 3<span class="star">★</span> per dollar</h3>
+                    <p> With Starbucks. Rewards <br>
+                        Visa Card</p>
+
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="images/footer5.jpeg" alt="">
+                <div class="footer-text">
+                    <p><b>Scan and pay separately</b></p> 
+                    <p>Use cash or credit/debit card at the
+                    register.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+
+    <!-- javascript -->
+    <script>
+        const navMenu = document.getElementById("navMenu");
+        const starSelection = document.getElementById("star");
+        const s25 = document.getElementById("s25")
+        const s50 = document.getElementById("s50")
+        const s100 = document.getElementById("s100")
+        const s200 = document.getElementById("s200")
+    
+        function showMenue() {
+            navMenu.style.right = "0";
+        }
+    
+        function hideMenue() {
+            navMenu.style.right = "-200px";
+        }
+
+        function S25() {
+            starSelection.style.setProperty("--underline-position", "-25px");
+            s25.style.display = "flex";
+            s50.style.display = "none";
+            s100.style.display = "none";
+            s200.style.display = "none";
+        }
+
+        function S50() {
+            starSelection.style.setProperty("--underline-position", "70px");
+            s25.style.display = "none";
+            s50.style.display = "flex";
+            s100.style.display = "none";
+            s200.style.display = "none";
+        }
+
+        function S100() {
+            starSelection.style.setProperty("--underline-position", "170px");
+            s25.style.display = "none";
+            s50.style.display = "none";
+            s100.style.display = "flex";
+            s200.style.display = "none";
+        }
+
+        function S200() {
+            starSelection.style.setProperty("--underline-position", "280px");
+            s25.style.display = "none";
+            s50.style.display = "none";
+            s100.style.display = "none";
+            s200.style.display = "flex";
+        }
+
+    </script>
+</body>
+</html>

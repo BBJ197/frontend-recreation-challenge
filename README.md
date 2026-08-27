@@ -8,8 +8,7 @@ Each project is recreated as closely as possible to the original design using pr
 
 ### 1. Ableton
 
-**Level:** 1  
-**Status:** 🚧 In Progress
+**Level:** 1
 
 A recreation of the Ableton About page.
 
@@ -29,8 +28,7 @@ A recreation of the Ableton About page.
 
 ### 2. Starbucks
 
-**Level:** 2  
-**Status:** ⏳ Planned
+**Level:** 2
 
 A recreation of the Starbucks Rewards page.
 
@@ -44,28 +42,6 @@ A recreation of the Starbucks Rewards page.
 - Complex spacing and positioning
 
 [View Project](./Starbucks)
-
----
-
-### 3. Canal Street Market
-
-**Level:** 3  
-**Status:** ⏳ Planned
-
-A recreation of the Canal Street Market homepage.
-
-**Focus:**
-
-- Advanced responsive layouts
-- Complex positioning
-- Typography
-- CSS Grid and Flexbox
-- Visual hierarchy
-- Advanced spacing and alignment
-
-[View Project](./Canal-Street-Market)
-
----
 
 ## Technologies
 
@@ -105,11 +81,6 @@ frontend-recreation-challenge/
 │   └── images/
 │
 ├── Starbucks/
-│   ├── index.html
-│   ├── style.css
-│   └── images/
-│
-├── Canal-Street-Market/
 │   ├── index.html
 │   ├── style.css
 │   └── images/
