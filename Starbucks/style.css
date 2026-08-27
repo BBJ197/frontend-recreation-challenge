@@ -45,7 +45,7 @@ header img {
     transition: 0.5s;
 }
 
-.header-right .button1{
+.button1{
     background-color: white;
     border: 1px solid;
     color: black;
@@ -56,7 +56,7 @@ header img {
     width: 100px;
 }
 
-.header-right .button2{
+.button2{
     background-color: black;
     border: 1px solid;
     color: white;
@@ -65,6 +65,10 @@ header img {
     font-size: 12px;
     font-weight: 700;
     width: 100px;
+}
+
+button:hover{
+    transform: translateY(-5px);
 }
 
 .header-right{
@@ -168,6 +172,7 @@ header nav .fa-xmark{
     }
 }
 
+/* sub header */
 
 .sub-header{
     background-color: #1e3932;
@@ -178,3 +183,45 @@ header nav .fa-xmark{
     padding: 10px 120px;
     font-size: 12px;
 }
+
+/* banner */
+
+.banner {
+    position: relative;
+    height: 60vh;
+    background-color: #d4e9e2;
+    overflow: hidden;
+    padding: 50px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
+
+.banner h1,
+.banner p,
+.banner button {
+    position: relative;
+    z-index: 1;
+}
+
+.banner button{
+    background-color: #008248;
+}
+
