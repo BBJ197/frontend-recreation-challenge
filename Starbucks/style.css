@@ -4,6 +4,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+h3{
+    font-weight: 500;
+}
+
+p{
+    font-size: 13px;
+}
+
+a{
+    color: #008248;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -225,3 +237,43 @@ header nav .fa-xmark{
     background-color: #008248;
 }
 
+/* section 1 */
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.one div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one .content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+}
+
+.one .content .card{
+    text-align: center;
+}
+
+.number-circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #008248;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #008248;
+}
