@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <header>
@@ -254,57 +255,5 @@
             </div>
         </div>
     </section>
-     
-
-    <!-- javascript -->
-    <script>
-        const navMenu = document.getElementById("navMenu");
-        const starSelection = document.getElementById("star");
-        const s25 = document.getElementById("s25")
-        const s50 = document.getElementById("s50")
-        const s100 = document.getElementById("s100")
-        const s200 = document.getElementById("s200")
-    
-        function showMenue() {
-            navMenu.style.right = "0";
-        }
-    
-        function hideMenue() {
-            navMenu.style.right = "-200px";
-        }
-
-        function S25() {
-            starSelection.style.setProperty("--underline-position", "-25px");
-            s25.style.display = "flex";
-            s50.style.display = "none";
-            s100.style.display = "none";
-            s200.style.display = "none";
-        }
-
-        function S50() {
-            starSelection.style.setProperty("--underline-position", "70px");
-            s25.style.display = "none";
-            s50.style.display = "flex";
-            s100.style.display = "none";
-            s200.style.display = "none";
-        }
-
-        function S100() {
-            starSelection.style.setProperty("--underline-position", "170px");
-            s25.style.display = "none";
-            s50.style.display = "none";
-            s100.style.display = "flex";
-            s200.style.display = "none";
-        }
-
-        function S200() {
-            starSelection.style.setProperty("--underline-position", "280px");
-            s25.style.display = "none";
-            s50.style.display = "none";
-            s100.style.display = "none";
-            s200.style.display = "flex";
-        }
-
-    </script>
 </body>
 </html>
